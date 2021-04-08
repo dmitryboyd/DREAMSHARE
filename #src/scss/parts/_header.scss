@@ -1,0 +1,42 @@
+.header{
+  max-height: 700px;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.nav{
+  padding-top: 46px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 470px) {
+    justify-content: center;
+  }
+  &__logo{
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: $white;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 470px) {
+      margin-bottom: 80px;
+    }
+  }
+  &__item{
+    margin-left: 26px;
+    &:last-child{
+      padding: 9px 20px;
+      border: solid 2px $white;
+      border-radius: $radius;
+    }
+    &-link{
+      font-size: 1rem;
+      color: $white;
+
+    }
+  }
+}
