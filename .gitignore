@@ -1,2 +1,4 @@
 node_modules/
 DREAMSHARE/
+.idea
+package-lock.json
