@@ -5,6 +5,7 @@
 }
 
 .nav{
+  position: relative;
   padding-top: 46px;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -20,6 +21,8 @@
     color: $white;
   }
   &__list{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
     display: flex;
     align-items: center;
     @media screen and (max-width: 470px) {
@@ -28,15 +31,24 @@
   }
   &__item{
     margin-left: 26px;
-    &:last-child{
-      padding: 9px 20px;
-      border: solid 2px $white;
-      border-radius: $radius;
-    }
+
     &-link{
       font-size: 1rem;
       color: $white;
-
+      transition: all 0.1s ease-in;
+      &.link-border{
+        padding: 9px 20px;
+        border: solid 2px $white;
+        border-radius: $radius;
+        color: $white;
+        transition: all 0.1s ease-in;
+        &:hover{
+          border: solid 2px $pink;
+        }
+      }
+      &:hover{
+        color: $pink;
+      }
     }
   }
 }

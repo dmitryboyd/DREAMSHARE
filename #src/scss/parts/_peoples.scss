@@ -1,6 +1,6 @@
 .peoples{
   text-align: center;
-  &__item{
+  &__cards{
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 768px){
@@ -14,6 +14,12 @@
     color: $pink;
     border: 2px $pink solid;
     border-radius: $radius;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      background-color: $pink;
+      color: $white;
+    }
   }
 }
 
@@ -48,7 +54,6 @@
     display: block;
     font-weight: 500;
     margin-top: 20px;
-
   }
   &__desc{
     margin: 16px 0 60px;
